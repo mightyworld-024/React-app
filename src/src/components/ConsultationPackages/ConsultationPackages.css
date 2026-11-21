@@ -1,0 +1,161 @@
+
+.consultation-packages {
+  padding: 75px 5%;
+  background: #050c18;
+  color: #fff;
+}
+
+.packages-heading {
+  margin-bottom: 32px;
+}
+
+.packages-label {
+  color: #d9a832;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.packages-heading h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  margin: 10px 0;
+  color: #fff;
+}
+
+.packages-heading p {
+  color: #aeb8c7;
+  font-size: 15px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.package-card {
+  background: linear-gradient(
+    145deg,
+    #101a29,
+    #080e19
+  );
+  border: 1px solid #876326;
+  border-radius: 12px;
+  padding: 27px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-7px);
+  border-color: #f4c65e;
+  box-shadow: 0 12px 35px rgba(218, 166, 48, 0.12);
+}
+
+.package-card h3 {
+  font-size: 19px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.package-price {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #f4c65e;
+  margin-bottom: 2px;
+}
+
+.package-subtitle {
+  text-align: center;
+  color: #c4c9d2;
+  font-size: 13px;
+}
+
+.package-duration {
+  text-align: center;
+  margin: 15px 0 22px;
+  color: #e8c16c;
+  font-size: 14px;
+}
+
+.package-duration span {
+  font-size: 19px;
+  margin-right: 5px;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+  flex: 1;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #e1e4e9;
+  margin-bottom: 12px;
+}
+
+.feature-check {
+  color: #f3bd45;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.package-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #eebc4e,
+    #ffdc7a
+  );
+  color: #15100a;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.package-btn:hover {
+  background: #fff0b5;
+  transform: scale(1.02);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .consultation-packages {
+    padding: 55px 5%;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .package-card {
+    padding: 25px 22px;
+  }
+
+  .packages-heading h2 {
+    font-size: 27px;
+  }
+}

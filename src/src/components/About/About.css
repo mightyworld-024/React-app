@@ -1,0 +1,174 @@
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 310px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(3, 9, 20, 0.05) 0%,
+      rgba(3, 9, 20, 0.12) 28%,
+      rgba(3, 9, 20, 0.45) 43%,
+      rgba(3, 9, 20, 0.15) 75%,
+      rgba(3, 9, 20, 0.1) 100%
+    ),
+    url('/images/Devotional%20Zodiac%20Temple%20Portrait.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  border-top: 1px solid rgba(218, 166, 48, 0.35);
+  border-bottom: 1px solid rgba(218, 166, 48, 0.35);
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+
+  width: 52%;
+  margin-left: 30%;
+  padding: 35px 25px;
+
+  color: #ffffff;
+}
+
+.about-eyebrow {
+  color: #e8b94e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-content h2 {
+  color: #f5c75e;
+  font-size: 29px;
+  margin: 8px 0 12px;
+}
+
+.about-description {
+  color: #e0e3e9;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 550px;
+  margin-bottom: 15px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 18px;
+  max-width: 530px;
+  margin-bottom: 22px;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #f1e8d5;
+  font-size: 13px;
+}
+
+.about-check {
+  color: #f2bd4c;
+  font-size: 15px;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 24px;
+  border-radius: 25px;
+
+  background: linear-gradient(
+    90deg,
+    #dca83e,
+    #ffdc7b
+  );
+
+  color: #17100a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(230, 178, 67, 0.25);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .about-section {
+    min-height: 350px;
+    background-position: 38% center;
+  }
+
+  .about-content {
+    width: 58%;
+    margin-left: 34%;
+    padding: 25px 15px;
+  }
+
+  .about-content h2 {
+    font-size: 25px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-section {
+    min-height: 550px;
+    align-items: flex-end;
+
+    background-size: auto 100%;
+    background-position: 30% top;
+
+    background-color: #050b16;
+
+    background-image:
+      linear-gradient(
+        0deg,
+        #050b16 0%,
+        rgba(5, 11, 22, 0.96) 42%,
+        rgba(5, 11, 22, 0.05) 100%
+      ),
+      url('/images/Devotional%20Zodiac%20Temple%20Portrait.png');
+  }
+
+  .about-content {
+    width: 100%;
+    margin: 0;
+    padding: 25px 22px 30px;
+  }
+
+  .about-content h2 {
+    font-size: 25px;
+  }
+
+  .about-description {
+    font-size: 13px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .about-highlight {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,286 @@
+
+/* MAIN SECTION */
+
+.contact-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65px 4%;
+
+  background:
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(29, 49, 76, 0.22),
+      transparent 55%
+    ),
+    #050b15;
+
+  color: #fff;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.contact-heading {
+  margin-bottom: 25px;
+}
+
+.contact-heading > span {
+  color: #e7b84e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.contact-heading h2 {
+  color: #f5cc70;
+  font-size: 30px;
+  margin: 8px 0 4px;
+}
+
+.contact-heading p {
+  color: #bdc5d1;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* CONTACT GRID */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* CONTACT CARD */
+
+.contact-card {
+  position: relative;
+  min-height: 155px;
+  padding: 20px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  text-decoration: none;
+
+  background: linear-gradient(
+    145deg,
+    #101b2a,
+    #080e19
+  );
+
+  border: 1px solid #67502e;
+  border-radius: 11px;
+
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: #e8b94e;
+
+  box-shadow:
+    0 8px 25px rgba(218, 166, 48, 0.13);
+}
+
+/* ICONS */
+
+.contact-card-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 13px;
+  margin-bottom: 12px;
+
+  transition: 0.3s ease;
+}
+
+.contact-whatsapp .contact-card-icon {
+  background: #087f4c;
+  color: #fff;
+}
+
+.contact-call .contact-card-icon {
+  background: #dba83f;
+  color: #17100a;
+}
+
+.contact-email .contact-card-icon {
+  background: #1767bb;
+  color: #fff;
+}
+
+.contact-booking .contact-card-icon {
+  background: #7139a5;
+  color: #fff;
+}
+
+.contact-card:hover .contact-card-icon {
+  transform: scale(1.1);
+}
+
+.contact-card h3 {
+  color: #f5e9d1;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.contact-card p {
+  color: #aeb8c7;
+  font-size: 12px;
+  margin: 0;
+}
+
+.contact-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  color: #c59b4c;
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.contact-card:hover .contact-arrow {
+  opacity: 1;
+}
+
+/* BOTTOM BUTTONS */
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 27px;
+}
+
+.contact-action {
+  min-width: 190px;
+  padding: 12px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border-radius: 9px;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.whatsapp-action {
+  background: linear-gradient(
+    90deg,
+    #08a968,
+    #00d17a
+  );
+
+  color: #fff;
+}
+
+.call-action {
+  background: linear-gradient(
+    90deg,
+    #e5ad3f,
+    #ffdc7b
+  );
+
+  color: #17100a;
+}
+
+.contact-action:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* FOOTNOTE */
+
+.contact-note {
+  text-align: center;
+  color: #929eaf;
+  font-size: 11px;
+  margin-top: 17px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+  .contact-section {
+    padding: 45px 16px;
+  }
+
+  .contact-heading h2 {
+    font-size: 25px;
+  }
+
+  .contact-grid {
+    gap: 11px;
+  }
+
+  .contact-card {
+    min-height: 140px;
+    padding: 15px 8px;
+  }
+
+  .contact-card h3 {
+    font-size: 12px;
+  }
+
+  .contact-card p {
+    font-size: 10px;
+  }
+
+  .contact-card-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-card-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .contact-action {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}

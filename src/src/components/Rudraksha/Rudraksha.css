@@ -1,0 +1,217 @@
+
+.rudraksha-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65px 4%;
+  background: #050b15;
+  color: #fff;
+}
+
+.rudraksha-container {
+  width: 100%;
+  max-width: 1550px;
+  margin: auto;
+}
+
+.rudraksha-heading {
+  margin-bottom: 28px;
+}
+
+.rudraksha-heading > span {
+  color: #e7b84e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.rudraksha-heading h2 {
+  color: #f5cc70;
+  font-size: 30px;
+  margin: 9px 0;
+}
+
+.rudraksha-heading p {
+  color: #b7c0ce;
+  font-size: 14px;
+}
+
+.rudraksha-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.rudraksha-card {
+  min-height: 220px;
+  padding: 24px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+    145deg,
+    #101b2a,
+    #080e19
+  );
+
+  border: 1px solid #72552c;
+  border-radius: 11px;
+
+  transition: all 0.3s ease;
+}
+
+.rudraksha-card:hover {
+  transform: translateY(-6px);
+  border-color: #f0bd4c;
+  box-shadow: 0 10px 28px rgba(218, 166, 48, 0.12);
+}
+
+.rudraksha-icon {
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #edbb4e;
+
+  background: radial-gradient(
+    circle,
+    rgba(218, 166, 48, 0.17),
+    transparent 72%
+  );
+
+  margin-bottom: 12px;
+}
+
+.rudraksha-card h3 {
+  color: #f5d58c;
+  font-size: 16px;
+  margin: 5px 0 8px;
+}
+
+.rudraksha-card p {
+  color: #bdc4d0;
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+
+.rudraksha-btn {
+  display: inline-block;
+  padding: 7px 20px;
+
+  color: #f6d17c;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+
+  border: 1px solid #9c762f;
+  border-radius: 25px;
+
+  transition: 0.3s ease;
+}
+
+.rudraksha-btn:hover {
+  background: #e9b94e;
+  color: #15100a;
+}
+
+.rudraksha-bottom {
+  text-align: center;
+  margin-top: 32px;
+  padding: 25px 15px;
+
+  border-top: 1px solid rgba(190, 145, 58, 0.25);
+}
+
+.rudraksha-bottom h3 {
+  color: #f3ca70;
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+
+.rudraksha-bottom p {
+  color: #b7c0ce;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.rudraksha-cta {
+  display: inline-block;
+  padding: 11px 30px;
+
+  color: #17100a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    #e6b343,
+    #ffdf83
+  );
+
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.rudraksha-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 18px rgba(230, 179, 67, 0.2);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .rudraksha-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .rudraksha-section {
+    padding: 45px 16px;
+  }
+
+  .rudraksha-grid {
+    gap: 12px;
+  }
+
+  .rudraksha-card {
+    min-height: 190px;
+    padding: 17px 9px;
+  }
+
+  .rudraksha-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rudraksha-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .rudraksha-card h3 {
+    font-size: 13px;
+  }
+
+  .rudraksha-card p {
+    font-size: 11px;
+  }
+
+  .rudraksha-heading h2 {
+    font-size: 25px;
+  }
+
+  .rudraksha-bottom h3 {
+    font-size: 16px;
+  }
+}
