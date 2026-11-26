@@ -29,6 +29,8 @@ function AstrologyBenefits() {
 
       <div className="life-guidance-container">
 
+        {/* CONTENT SECTION */}
+
         <div className="life-guidance-content">
 
           <span className="life-eyebrow">
@@ -40,6 +42,8 @@ function AstrologyBenefits() {
           <p className="life-description">
             जीवन के विभिन्न पहलुओं में ज्योतिषीय मार्गदर्शन प्राप्त करें
           </p>
+
+          {/* BENEFITS GRID */}
 
           <div className="life-benefits-grid">
 
@@ -61,8 +65,11 @@ function AstrologyBenefits() {
 
           </div>
 
+          {/* CTA BUTTON */}
+
           <a href="#consultation" className="life-guidance-btn">
-            व्यक्तिगत परामर्श प्राप्त करें →
+            व्यक्तिगत परामर्श प्राप्त करें
+            <span> → </span>
           </a>
 
           <p className="life-guidance-note">

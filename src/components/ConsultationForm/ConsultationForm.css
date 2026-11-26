@@ -1,38 +1,52 @@
 
 /* =========================================
-   CONSULTATION FORM - FULL WIDTH
+   ASTRO MITRA - CONSULTATION SECTION
 ========================================= */
 
 .consultation-form-section {
   width: 100%;
+  padding: 85px 4%;
   box-sizing: border-box;
   background: #050b15;
-  padding: 75px 4%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .consultation-form-container {
   width: 100%;
-  max-width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 45px;
+
   box-sizing: border-box;
 
-  padding: 40px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 45px;
+  align-items: center;
 
-  background: linear-gradient(145deg, #101a29, #070d18);
+  background: linear-gradient(
+    145deg,
+    #101a29,
+    #070d18
+  );
 
-  border: 1px solid #a77b2c;
-  border-radius: 12px;
+  border: 1px solid rgba(167, 123, 44, 0.7);
+  border-radius: 18px;
 
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
 }
 
-/* FORM HEADING */
+
+/* =========================================
+   LEFT SIDE - FORM
+========================================= */
+
+.consultation-form-left {
+  width: 100%;
+  min-width: 0;
+}
 
 .form-heading {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .form-eyebrow {
@@ -44,53 +58,58 @@
 
 .form-heading h2 {
   color: #f5c75e;
-  font-size: 27px;
+  font-size: clamp(25px, 2.5vw, 36px);
   line-height: 1.5;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .form-heading p {
   color: #b9c2d0;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
+  margin: 0;
 }
 
-/* FORM LAYOUT */
+
+/* =========================================
+   FORM LAYOUT
+========================================= */
 
 .kundli-form {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 14px;
 }
-
-/* INPUTS */
 
 .kundli-form input,
 .kundli-form select,
 .kundli-form textarea {
   width: 100%;
+  min-width: 0;
   box-sizing: border-box;
 
-  padding: 13px 14px;
+  padding: 14px;
 
   background: #f7f8fa;
   color: #202633;
 
   border: 1px solid #d5d7dc;
-  border-radius: 6px;
+  border-radius: 7px;
 
   font-family: inherit;
   font-size: 13px;
-  outline: none;
 
-  transition: 0.25s ease;
+  outline: none;
+  transition: all 0.25s ease;
 }
 
 .kundli-form input:focus,
 .kundli-form select:focus,
 .kundli-form textarea:focus {
   border-color: #e4b447;
-  box-shadow: 0 0 0 2px rgba(228, 180, 71, 0.15);
+
+  box-shadow:
+    0 0 0 3px rgba(228, 180, 71, 0.15);
 }
 
 .kundli-form input::placeholder,
@@ -98,7 +117,17 @@
   color: #777f8b;
 }
 
-/* TWO COLUMN ROW */
+.kundli-form select {
+  cursor: pointer;
+}
+
+.kundli-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+/* TWO COLUMN INPUT ROW */
 
 .form-row {
   display: grid;
@@ -106,27 +135,22 @@
   gap: 12px;
 }
 
-/* TEXTAREA */
 
-.kundli-form textarea {
-  resize: vertical;
-  min-height: 90px;
-}
-
-/* SELECT */
-
-.kundli-form select {
-  cursor: pointer;
-}
-
-/* SUBMIT BUTTON */
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
 
 .consultation-submit-btn {
   width: 100%;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
   border: none;
   border-radius: 30px;
-
-  padding: 13px 20px;
 
   background: linear-gradient(
     90deg,
@@ -135,17 +159,30 @@
   );
 
   color: #17100a;
+
   font-size: 14px;
   font-weight: 700;
 
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.consultation-submit-btn span {
+  font-size: 19px;
+  transition: transform 0.3s ease;
 }
 
 .consultation-submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(229, 173, 63, 0.2);
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px rgba(229, 173, 63, 0.3);
 }
+
+.consultation-submit-btn:hover span {
+  transform: translateX(5px);
+}
+
 
 /* PRIVACY TEXT */
 
@@ -156,39 +193,443 @@
   margin-top: 2px;
 }
 
+.form-privacy span {
+  margin-right: 5px;
+}
+
+
+/* =========================================
+   RIGHT SIDE - GALAXY
+========================================= */
+
+.consultation-galaxy {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 600px;
+
+  overflow: hidden;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      #172b48 0%,
+      #0a1425 48%,
+      #050b15 100%
+    );
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.galaxy-stars {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.galaxy-star {
+  position: absolute;
+
+  left: var(--star-x);
+  top: var(--star-y);
+
+  width: 3px;
+  height: 3px;
+
+  background: #fff3cb;
+  border-radius: 50%;
+
+  box-shadow: 0 0 8px #f5c75e;
+
+  animation: starTwinkle 2.5s ease-in-out infinite;
+  animation-delay: var(--star-delay);
+}
+
+
+/* =========================================
+   NEBULA EFFECT
+========================================= */
+
+.galaxy-nebula {
+  position: absolute;
+
+  width: 90%;
+  height: 65%;
+
+  top: 5%;
+  left: 5%;
+
+  background:
+    radial-gradient(
+      ellipse at 30% 40%,
+      rgba(73, 106, 174, 0.25),
+      transparent 55%
+    ),
+
+    radial-gradient(
+      ellipse at 70% 60%,
+      rgba(177, 113, 64, 0.18),
+      transparent 55%
+    );
+
+  filter: blur(30px);
+
+  animation: nebulaMove 8s ease-in-out infinite alternate;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   ORBIT SYSTEM
+========================================= */
+
+.galaxy-orbit {
+  position: absolute;
+
+  top: 38%;
+  left: 50%;
+
+  border: 1px solid rgba(225, 190, 117, 0.35);
+  border-radius: 50%;
+
+  z-index: 2;
+}
+
+
+/* FIRST ORBIT */
+
+.orbit-one {
+  width: 220px;
+  height: 220px;
+
+  transform: translate(-50%, -50%);
+
+  animation: orbitRotate 12s linear infinite;
+}
+
+
+/* SECOND ORBIT */
+
+.orbit-two {
+  width: 340px;
+  height: 340px;
+
+  transform: translate(-50%, -50%) rotateX(65deg);
+
+  animation: orbitRotateTwo 18s linear infinite;
+}
+
+
+/* THIRD ORBIT */
+
+.orbit-three {
+  width: 450px;
+  height: 450px;
+
+  transform: translate(-50%, -50%) rotateX(65deg);
+
+  animation: orbitRotateThree 25s linear infinite;
+}
+
+
+/* =========================================
+   PLANETS
+========================================= */
+
+.orbit-planet {
+  position: absolute;
+
+  top: 50%;
+  left: -7px;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #f5c75e;
+
+  box-shadow: 0 0 15px #f5c75e;
+}
+
+.planet-two {
+  width: 19px;
+  height: 19px;
+
+  background: #8aa9e5;
+
+  box-shadow: 0 0 20px #628edb;
+}
+
+.planet-three {
+  width: 11px;
+  height: 11px;
+
+  background: #d68b73;
+
+  box-shadow: 0 0 15px #d68b73;
+}
+
+
+/* =========================================
+   CENTRAL COSMIC SPHERE
+========================================= */
+
+.galaxy-core {
+  position: absolute;
+
+  top: 38%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 135px;
+  height: 135px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #fff0bc,
+      #d9a33f 25%,
+      #8a5724 55%,
+      #24172b 80%
+    );
+
+  border: 2px solid rgba(255, 218, 132, 0.7);
+
+  box-shadow:
+    0 0 25px rgba(255, 190, 70, 0.45),
+    0 0 70px rgba(98, 133, 209, 0.3),
+    inset -15px -15px 30px rgba(0, 0, 0, 0.5);
+
+  z-index: 3;
+
+  animation: sphereFloat 4s ease-in-out infinite;
+}
+
+.galaxy-core-inner {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(255, 255, 255, 0.35),
+      transparent 55%
+    );
+}
+
+.galaxy-core span {
+  font-size: 55px;
+
+  color: #fff5d6;
+
+  text-shadow: 0 0 25px #fff;
+}
+
+
+/* =========================================
+   GALAXY CAPTION
+========================================= */
+
+.galaxy-caption {
+  position: absolute;
+
+  bottom: 42px;
+
+  left: 30px;
+  right: 30px;
+
+  text-align: center;
+
+  z-index: 4;
+}
+
+.galaxy-caption-eyebrow {
+  color: #e7b84e;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.galaxy-caption h3 {
+  color: #fff1d0;
+
+  font-size: 32px;
+  line-height: 1.3;
+
+  margin: 12px 0;
+}
+
+.galaxy-caption p {
+  color: #b9c2d0;
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  max-width: 320px;
+  margin: auto;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes orbitRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes orbitRotateTwo {
+  from {
+    transform: translate(-50%, -50%) rotateX(65deg) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateX(65deg) rotate(360deg);
+  }
+}
+
+@keyframes orbitRotateThree {
+  from {
+    transform: translate(-50%, -50%) rotateX(65deg) rotate(360deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateX(65deg) rotate(0deg);
+  }
+}
+
+@keyframes sphereFloat {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) translateY(-12px);
+  }
+}
+
+@keyframes starTwinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes nebulaMove {
+  from {
+    transform: translate(-15px, 0) scale(0.95);
+  }
+
+  to {
+    transform: translate(15px, 12px) scale(1.1);
+  }
+}
+
+
 /* =========================================
    TABLET RESPONSIVE
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
   .consultation-form-section {
-    padding: 55px 3%;
+    padding: 60px 3%;
   }
 
   .consultation-form-container {
-    padding: 28px 22px;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 25px;
+    padding: 28px;
   }
+
+  .consultation-galaxy {
+    min-height: 520px;
+  }
+
+  .orbit-three {
+    width: 350px;
+    height: 350px;
+  }
+
+  .orbit-two {
+    width: 280px;
+    height: 280px;
+  }
+
+  .galaxy-caption {
+    left: 15px;
+    right: 15px;
+  }
+
+  .galaxy-caption h3 {
+    font-size: 27px;
+  }
+
 }
+
 
 /* =========================================
    MOBILE RESPONSIVE
 ========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
+
   .consultation-form-section {
     padding: 45px 14px;
   }
 
   .consultation-form-container {
+    grid-template-columns: 1fr;
+
     padding: 23px 17px;
+
+    gap: 30px;
   }
 
   .form-heading h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .form-heading p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .form-row {
@@ -199,6 +640,99 @@
   .kundli-form input,
   .kundli-form select,
   .kundli-form textarea {
-    font-size: 12px;
+    font-size: 13px;
   }
+
+  .consultation-galaxy {
+    min-height: 460px;
+  }
+
+  .orbit-one {
+    width: 190px;
+    height: 190px;
+  }
+
+  .orbit-two {
+    width: 260px;
+    height: 260px;
+  }
+
+  .orbit-three {
+    width: 330px;
+    height: 330px;
+  }
+
+  .galaxy-core {
+    width: 115px;
+    height: 115px;
+  }
+
+  .galaxy-core span {
+    font-size: 45px;
+  }
+
+  .galaxy-caption {
+    bottom: 30px;
+  }
+
+  .galaxy-caption h3 {
+    font-size: 26px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .consultation-form-container {
+    padding: 19px 13px;
+  }
+
+  .form-heading h2 {
+    font-size: 22px;
+  }
+
+  .consultation-galaxy {
+    min-height: 410px;
+  }
+
+  .orbit-three {
+    width: 290px;
+    height: 290px;
+  }
+
+  .orbit-two {
+    width: 230px;
+    height: 230px;
+  }
+
+  .galaxy-caption h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .galaxy-orbit,
+  .galaxy-core,
+  .galaxy-star,
+  .galaxy-nebula {
+    animation: none !important;
+  }
+
+  .consultation-submit-btn,
+  .consultation-submit-btn span {
+    transition: none;
+  }
+
 }
