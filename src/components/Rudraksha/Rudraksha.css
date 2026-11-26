@@ -1,0 +1,285 @@
+
+/* =========================================
+   ASTRO MITRA - RUDRAKSHA & GEMSTONES
+========================================= */
+
+.rudraksha-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65px 4%;
+  background: #050b15;
+  color: #fff;
+}
+
+.rudraksha-container {
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.rudraksha-heading {
+  margin-bottom: 28px;
+}
+
+.rudraksha-heading > span {
+  color: #e7b84e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.rudraksha-heading h2 {
+  color: #f5cc70;
+  font-size: 30px;
+  margin: 9px 0;
+}
+
+.rudraksha-heading p {
+  color: #b7c0ce;
+  font-size: 14px;
+}
+
+/* CARD GRID */
+
+.rudraksha-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+/* CARDS */
+
+.rudraksha-card {
+  min-width: 0;
+  min-height: 265px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+    145deg,
+    #101b2a,
+    #080e19
+  );
+
+  border: 1px solid rgba(218, 166, 48, 0.45);
+  border-radius: 12px;
+
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.rudraksha-card:hover {
+  transform: translateY(-6px);
+  border-color: #f0bd4c;
+
+  box-shadow:
+    0 10px 30px rgba(218, 166, 48, 0.13),
+    inset 0 0 20px rgba(218, 166, 48, 0.04);
+}
+
+/* IMAGE CONTAINER */
+
+.rudraksha-icon {
+  width: 100%;
+  max-width: 190px;
+  height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  background: radial-gradient(
+    circle,
+    rgba(218, 166, 48, 0.09),
+    transparent 75%
+  );
+
+  border-radius: 10px;
+}
+
+/* ACTUAL IMAGES */
+
+.rudraksha-card-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 9px;
+
+  transition: transform 0.4s ease;
+}
+
+.rudraksha-card:hover .rudraksha-card-image {
+  transform: scale(1.08);
+}
+
+/* CARD TITLE */
+
+.rudraksha-card h3 {
+  color: #f5d58c;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin: 5px 0 8px;
+}
+
+/* CARD DESCRIPTION */
+
+.rudraksha-card p {
+  color: #bdc4d0;
+  font-size: 12px;
+
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+/* CARD BUTTON */
+
+.rudraksha-btn {
+  display: inline-block;
+  padding: 7px 20px;
+
+  color: #f6d17c;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+
+  border: 1px solid #9c762f;
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+}
+
+.rudraksha-btn:hover {
+  background: #e9b94e;
+  color: #15100a;
+
+  box-shadow: 0 4px 15px rgba(233, 185, 78, 0.2);
+}
+
+/* BOTTOM CONSULTATION */
+
+.rudraksha-bottom {
+  text-align: center;
+  margin-top: 32px;
+  padding: 25px 15px;
+
+  border-top: 1px solid rgba(190, 145, 58, 0.25);
+}
+
+.rudraksha-bottom h3 {
+  color: #f3ca70;
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+
+.rudraksha-bottom p {
+  color: #b7c0ce;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* CTA BUTTON */
+
+.rudraksha-cta {
+  display: inline-block;
+  padding: 11px 30px;
+
+  color: #17100a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    #e6b343,
+    #ffdf83
+  );
+
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.rudraksha-cta:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 18px rgba(230, 179, 67, 0.2);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .rudraksha-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .rudraksha-card {
+    min-height: 250px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .rudraksha-section {
+    padding: 45px 16px;
+  }
+
+  .rudraksha-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .rudraksha-card {
+    min-height: 220px;
+    padding: 14px 8px;
+  }
+
+  .rudraksha-icon {
+    height: 90px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .rudraksha-card h3 {
+    font-size: 13px;
+  }
+
+  .rudraksha-card p {
+    font-size: 11px;
+  }
+
+  .rudraksha-btn {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+
+  .rudraksha-heading h2 {
+    font-size: 25px;
+  }
+
+  .rudraksha-bottom h3 {
+    font-size: 16px;
+  }
+}

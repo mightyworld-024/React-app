@@ -1,0 +1,39 @@
+
+/* =================================
+   ASTRO MITRA - MAIN APP STYLES
+================================= */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Global section reset */
+
+.app section {
+  width: 100%;
+  position: relative;
+}
+
+/* Images */
+
+.app img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Links */
+
+.app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+
+.app button {
+  font-family: inherit;
+  cursor: pointer;
+}

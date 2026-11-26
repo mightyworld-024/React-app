@@ -1,0 +1,101 @@
+
+.final-cta-section {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  padding: 35px 8%;
+
+  background-image: url('/images/Astro-Mitra-Final-CTA.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  border-top: 1px solid rgba(218, 166, 48, 0.4);
+  border-bottom: 1px solid rgba(218, 166, 48, 0.4);
+}
+
+.final-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    0deg,
+    rgba(3, 8, 17, 0.45),
+    transparent 45%
+  );
+
+  pointer-events: none;
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 13px 27px;
+
+  background: linear-gradient(
+    90deg,
+    #e5ad3f,
+    #ffdc7b
+  );
+
+  color: #17100a;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 30px;
+  border: 1px solid #f5d17b;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.final-cta-btn:hover {
+  transform: translateY(-4px);
+  background: #fff0b5;
+  box-shadow: 0 8px 25px rgba(240, 190, 82, 0.3);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .final-cta-section {
+    min-height: 300px;
+    padding: 25px 5%;
+    background-position: center;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .final-cta-section {
+    min-height: 280px;
+    padding: 22px 16px;
+
+    background-size: auto 100%;
+    background-position: 65% center;
+  }
+
+  .final-cta-btn {
+    font-size: 12px;
+    padding: 11px 20px;
+  }
+}

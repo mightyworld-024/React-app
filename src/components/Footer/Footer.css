@@ -1,0 +1,511 @@
+
+/* =========================================
+   ASTRO MITRA - FOOTER
+========================================= */
+
+.footer-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65px 4% 22px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(218, 166, 48, 0.07),
+      transparent 45%
+    ),
+    #030914;
+
+  color: #fff;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   MAIN FOOTER GRID
+========================================= */
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1.2fr 1.1fr;
+  gap: 40px;
+  padding-bottom: 45px;
+}
+
+/* =========================================
+   BRAND COLUMN
+========================================= */
+
+.footer-brand {
+  max-width: 330px;
+}
+
+.footer-logo-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e7b84e;
+
+  border: 1px solid rgba(231, 184, 78, 0.5);
+  border-radius: 50%;
+
+  background: rgba(231, 184, 78, 0.07);
+
+  margin-bottom: 15px;
+}
+
+.footer-brand h2 {
+  color: #f5cc70;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin: 0 0 9px;
+}
+
+.footer-tagline {
+  color: #e7b84e;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.footer-brand-description {
+  color: #aeb9c9;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column h3 {
+  color: #f5cc70;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin: 0 0 22px;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+
+  width: 35px;
+  height: 2px;
+
+  left: 0;
+  bottom: -9px;
+
+  background: #d9a441;
+}
+
+/* QUICK LINKS */
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 13px;
+}
+
+.footer-column ul li a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #b7c0ce;
+  font-size: 12px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.footer-column ul li a svg {
+  color: #c79b45;
+  flex-shrink: 0;
+}
+
+.footer-column ul li a:hover {
+  color: #f5cc70;
+  transform: translateX(4px);
+}
+
+/* =========================================
+   CONTACT COLUMN
+========================================= */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-contact > a:not(.footer-whatsapp) {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #b7c0ce;
+  font-size: 12px;
+  text-decoration: none;
+
+  margin-bottom: 17px;
+
+  transition: 0.3s ease;
+}
+
+.footer-contact > a:not(.footer-whatsapp):hover {
+  color: #f5cc70;
+}
+
+.footer-contact > a:not(.footer-whatsapp) svg {
+  color: #e7b84e;
+  flex-shrink: 0;
+}
+
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #b7c0ce;
+  font-size: 12px;
+
+  margin-bottom: 5px;
+}
+
+.footer-address svg {
+  color: #e7b84e;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   WHATSAPP CONTACT BUTTON
+========================================= */
+
+.footer-whatsapp {
+  width: 100%;
+  max-width: 270px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 13px;
+  margin: 17px 0 20px;
+
+  color: #fff;
+  text-decoration: none;
+
+  background: linear-gradient(
+    120deg,
+    rgba(37, 211, 102, 0.13),
+    rgba(37, 211, 102, 0.04)
+  );
+
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  border-radius: 10px;
+
+  transition: all 0.35s ease;
+}
+
+.footer-whatsapp .whatsapp-icon {
+  color: #25d366;
+  font-size: 27px;
+  flex-shrink: 0;
+}
+
+.whatsapp-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.whatsapp-text strong {
+  color: #f5d58c;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.whatsapp-text small {
+  color: #b7c0ce;
+  font-size: 10px;
+}
+
+.footer-whatsapp .whatsapp-arrow {
+  margin-left: auto;
+  color: #25d366;
+  flex-shrink: 0;
+
+  transition: transform 0.3s ease;
+}
+
+.footer-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.17);
+  border-color: #25d366;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 7px 22px rgba(37, 211, 102, 0.12);
+}
+
+.footer-whatsapp:hover .whatsapp-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e7b84e;
+  text-decoration: none;
+
+  background: rgba(231, 184, 78, 0.07);
+  border: 1px solid rgba(231, 184, 78, 0.3);
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #050b15;
+  background: #e7b84e;
+
+  transform: translateY(-4px);
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(218, 166, 48, 0.5),
+    transparent
+  );
+
+  margin-bottom: 22px;
+}
+
+/* =========================================
+   LEGAL LINKS
+========================================= */
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  margin-bottom: 20px;
+}
+
+.footer-legal a {
+  color: #aeb9c9;
+  font-size: 11px;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #f5cc70;
+}
+
+.footer-legal span {
+  color: #72552c;
+  font-size: 11px;
+}
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.footer-disclaimer {
+  max-width: 900px;
+  margin: 0 auto 20px;
+
+  text-align: center;
+}
+
+.footer-disclaimer p {
+  color: #8491a3;
+  font-size: 11px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-copyright {
+  text-align: center;
+
+  color: #778397;
+  font-size: 11px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(190, 145, 58, 0.13);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 45px 20px 20px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 18px;
+    padding-bottom: 30px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand h2 {
+    font-size: 23px;
+  }
+
+  .footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 12px;
+  }
+
+  .footer-column ul li a {
+    font-size: 11px;
+  }
+
+  .footer-contact > a:not(.footer-whatsapp),
+  .footer-address {
+    font-size: 11px;
+    gap: 7px;
+  }
+
+  .footer-whatsapp {
+    padding: 10px 9px;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .footer-whatsapp .whatsapp-icon {
+    font-size: 23px;
+  }
+
+  .whatsapp-text strong {
+    font-size: 10px;
+  }
+
+  .whatsapp-text small {
+    font-size: 9px;
+  }
+
+  .footer-whatsapp .whatsapp-arrow {
+    width: 14px;
+  }
+
+  .footer-socials {
+    gap: 8px;
+  }
+
+  .footer-socials a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-legal {
+    gap: 8px;
+  }
+
+  .footer-legal a {
+    font-size: 10px;
+  }
+
+  .footer-disclaimer p {
+    font-size: 10px;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+  .footer-main {
+    gap: 30px 12px;
+  }
+
+  .footer-contact > a:not(.footer-whatsapp) {
+    font-size: 10px;
+  }
+
+  .whatsapp-text strong {
+    font-size: 9px;
+  }
+
+  .whatsapp-text small {
+    font-size: 8px;
+  }
+}
