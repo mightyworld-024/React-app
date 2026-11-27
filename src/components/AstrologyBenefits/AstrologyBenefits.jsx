@@ -67,10 +67,15 @@ function AstrologyBenefits() {
 
           {/* CTA BUTTON */}
 
-          <a href="#consultation" className="life-guidance-btn">
-            व्यक्तिगत परामर्श प्राप्त करें
-            <span> → </span>
-          </a>
+          <a
+  href="https://wa.me/919315617614?text=Namaste%2C%20mujhe%20vyaktigat%20paramarsh%20lena%20hai."
+  className="life-guidance-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  व्यक्तिगत परामर्श प्राप्त करें
+  <span> → </span>
+</a>
 
           <p className="life-guidance-note">
             आपकी कुंडली और आवश्यकताओं के अनुसार व्यक्तिगत मार्गदर्शन

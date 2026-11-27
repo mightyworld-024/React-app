@@ -154,12 +154,23 @@ Sent via Astro Mitra Website
             />
 
             <button
-              type="submit"
-              className="consultation-submit-btn"
-            >
-              Book Consultation
-              <span> → </span>
-            </button>
+  type="button"
+  className="consultation-submit-btn"
+  onClick={() => {
+    const message = encodeURIComponent(
+      "Namaste, mujhe consultation book karni hai."
+    );
+
+    window.open(
+      `https://wa.me/919315617614?text=${message}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }}
+>
+  Book Consultation
+  <span> → </span>
+</button>
 
             <div className="form-privacy">
               <span>🔒</span>

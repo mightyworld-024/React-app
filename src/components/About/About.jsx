@@ -37,10 +37,15 @@ function About() {
           ))}
         </div>
 
-        <a href="#consultation" className="about-btn">
-          हमसे परामर्श करें
-          <span> → </span>
-        </a>
+        <a
+  href="https://wa.me/919315617614?text=Namaste%2C%20mujhe%20jyotish%20paramarsh%20lena%20hai."
+  className="about-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  हमसे परामर्श करें
+  <span> → </span>
+</a>
 
       </div>
 

@@ -36,10 +36,15 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Consultation Button */}
-      <a href="#consultation" className="navbar-cta">
-        Book Consultation
-      </a>
+     {/* Consultation Button */}
+<a
+  href="https://wa.me/919315617614?text=Hi%2C%20I%20want%20to%20book%20a%20consultation."
+  className="navbar-cta"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Book Consultation
+</a>
 
     </nav>
   );

@@ -85,9 +85,14 @@ function ConsultationPackages() {
               ))}
             </ul>
 
-            <a href="#consultation" className="package-btn">
-              Book Now
-            </a>
+            <a
+  href="https://wa.me/919315617614?text=Hi%2C%20I%20am%20interested%20in%20booking%20this%20package."
+  className="package-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Book Now
+</a>
 
           </div>
         ))}

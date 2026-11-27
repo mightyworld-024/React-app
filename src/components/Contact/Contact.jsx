@@ -9,11 +9,9 @@ import {
 
 import './Contact.css';
 
-// Add actual business contact details before publishing.
+// WhatsApp Business Number
 const CONTACT = {
-  whatsapp: '',
-  phone: '',
-  email: ''
+  whatsapp: '919315617614'
 };
 
 const contactOptions = [
@@ -22,34 +20,28 @@ const contactOptions = [
     subtitle: 'सीधे बात करें',
     icon: MessageCircle,
     className: 'contact-whatsapp',
-    href: CONTACT.whatsapp
-      ? `https://wa.me/${CONTACT.whatsapp}`
-      : '#consultation'
+    message: 'Namaste, mujhe aapki astrology services ke baare mein jaankari chahiye.'
   },
   {
     title: 'Call',
     subtitle: 'कॉल करें',
     icon: Phone,
     className: 'contact-call',
-    href: CONTACT.phone
-      ? `tel:${CONTACT.phone}`
-      : '#consultation'
+    message: 'Namaste, main aapse astrology consultation ke liye baat karna chahta hoon.'
   },
   {
     title: 'Email',
     subtitle: 'ईमेल भेजें',
     icon: Mail,
     className: 'contact-email',
-    href: CONTACT.email
-      ? `mailto:${CONTACT.email}`
-      : '#consultation'
+    message: 'Namaste, mujhe apni problem ke liye jyotishiya margdarshan chahiye.'
   },
   {
     title: 'Consultation Booking',
     subtitle: 'अपॉइंटमेंट बुक करें',
     icon: CalendarDays,
     className: 'contact-booking',
-    href: '#consultation'
+    message: 'Namaste, main apni consultation appointment book karna chahta hoon. Kripya mujhe details batayein.'
   }
 ];
 
@@ -82,7 +74,9 @@ function Contact() {
 
             return (
               <a
-                href={item.href}
+                href={`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(item.message)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`contact-card ${item.className}`}
                 key={item.title}
               >
@@ -111,11 +105,9 @@ function Contact() {
         <div className="contact-actions">
 
           <a
-            href={
-              CONTACT.whatsapp
-                ? `https://wa.me/${CONTACT.whatsapp}`
-                : '#consultation'
-            }
+            href={`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Namaste, mujhe aapki astrology services ke baare mein jaankari chahiye.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-action whatsapp-action"
           >
             <MessageCircle size={18} />
@@ -123,7 +115,9 @@ function Contact() {
           </a>
 
           <a
-            href={CONTACT.phone ? `tel:${CONTACT.phone}` : '#consultation'}
+            href={`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Namaste, main consultation book karna chahta hoon.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-action call-action"
           >
             <Phone size={17} />

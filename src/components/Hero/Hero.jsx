@@ -32,18 +32,23 @@ function Hero() {
           {/* CTA Buttons */}
           <div className="hero-buttons">
 
-            <a href="#consultation" className="hero-btn primary-btn">
-              Book Kundli Consultation
-            </a>
+            <a
+  href="https://wa.me/919315617614?text=Hi%2C%20I%20want%20to%20book%20a%20Kundli%20consultation."
+  className="hero-btn primary-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Book Kundli Consultation
+</a>
 
             <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-btn whatsapp-btn"
-            >
-              <span>◉</span> WhatsApp पर बात करें
-            </a>
+  href="https://wa.me/919315617614?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20astrology%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hero-btn whatsapp-btn"
+>
+  <span>◉</span> WhatsApp पर बात करें
+</a>
 
           </div>
 
