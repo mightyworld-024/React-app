@@ -1,4 +1,3 @@
-
 /* =========================================
    ASTRO MITRA - HERO SECTION
 ========================================= */
@@ -30,6 +29,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  opacity: 1;
 }
 
 /* DARK OVERLAY */
@@ -43,8 +43,8 @@
 
   background: linear-gradient(
     90deg,
-    rgba(5, 11, 20, 0.20) 0%,
-    rgba(5, 11, 20, 0.08) 40%,
+    rgba(5, 11, 20, 0.16) 0%,
+    rgba(5, 11, 20, 0.06) 40%,
     transparent 75%
   );
 }
@@ -88,7 +88,7 @@
   max-width: 480px;
   font-size: 14px;
   line-height: 1.8;
-  color: #E4DFD3;
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
@@ -115,6 +115,7 @@
   font-weight: 700;
 
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .primary-btn {
@@ -208,15 +209,21 @@
   }
 
   .hero-astrologer-img {
-    object-position: 62% center;
-    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 75% center;
+    opacity: 1;
   }
+
+  /* LIGHTER OVERLAY */
 
   .hero-section::after {
     background: linear-gradient(
       180deg,
-      rgba(5, 11, 20, 0.15),
-      rgba(5, 11, 20, 0.9)
+      rgba(5, 11, 20, 0.02) 0%,
+      rgba(5, 11, 20, 0.08) 40%,
+      rgba(5, 11, 20, 0.48) 100%
     );
   }
 
@@ -234,14 +241,17 @@
 
   .hero-text h1 {
     font-size: 27px;
+    line-height: 1.4;
   }
 
   .hero-text p {
     font-size: 13px;
+    color: #FFFFFF;
   }
 
   .hero-buttons {
     gap: 10px;
+    margin-bottom: 27px;
   }
 
   .hero-btn {
@@ -255,5 +265,39 @@
 
   .trust-item {
     font-size: 10px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .hero-section {
+    height: 530px;
+    min-height: 530px;
+  }
+
+  .hero-content {
+    padding: 35px 14px 22px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    padding: 10px 11px;
+    font-size: 10px;
+  }
+
+  .hero-trust {
+    gap: 10px;
+  }
+
+  .trust-item {
+    font-size: 9px;
   }
 }
